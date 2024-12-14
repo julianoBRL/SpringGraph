@@ -1,0 +1,5 @@
+
+type Subscription {
+    bookCreated: Book
+    bookCreatedFilteredTitle(title: String): Book
+}

@@ -1,0 +1,6 @@
+
+type Query {
+    #allBooks: [Book]
+    allBooks(page: Int, size: Int): BookPage
+    bookById(id: String!): Book
+}

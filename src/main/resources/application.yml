@@ -1,0 +1,28 @@
+
+spring:
+  application:
+    name: SpringGraph
+  graphql:
+    websocket:
+      path: /graphql
+      enabled: true
+      connection-init-timeout: 60s
+      connection-max-idle-time: 30s
+    subscription:
+      enabled: true
+    servlet:
+      mapping: /graphql
+    schema:
+      printer:
+        enabled: true
+  datasource:
+    url: jdbc:h2:mem:spring_graph
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update

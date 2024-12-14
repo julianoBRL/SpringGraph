@@ -1,0 +1,15 @@
+
+type Book {
+    id: ID
+    title: String
+    author: String
+}
+
+type BookPage {
+    books: [Book]
+    totalElements: Int
+    totalPages: Int
+    currentPage: Int
+    pageSize: Int
+}
+
