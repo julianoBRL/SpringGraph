@@ -3,5 +3,3 @@ input BookInput {
     title: String
     author: String
 }
-
-

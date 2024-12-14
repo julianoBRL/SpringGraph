@@ -12,4 +12,3 @@ type BookPage {
     currentPage: Int
     pageSize: Int
 }
-
